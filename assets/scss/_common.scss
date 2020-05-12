@@ -8,3 +8,11 @@ body {
   //TODO: убрать, когда сформируем страницу
   overflow-y: scroll;
 }
+
+a{
+  color: $color-primary;
+  &:hover{
+    columns: $color-accent;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,72 @@
+.navbar {
+  margin-bottom: 0;
+  border: none;
+  background-color: $color-dark2;
+}
+
+@media (min-width: $sm-m) {
+  .navbar-left {
+    li {
+      margin: 5px 5px 5px 0;
+    }
+  }
+}
+
+@media (max-width: $sm-m) {
+  .navbar-left {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $sm-m) {
+  .navbar-right {
+    li {
+      margin: 5px 0 5px 5px;
+    }
+  }
+}
+
+@media (max-width: $sm-m) {
+  .navbar-right {
+    margin-top: 0;
+  }
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  transition: background-color 0.4s;
+  @media (min-width: $sm-m) {
+    border-radius: 4px;
+  }
+  @media (max-width: $sm-m) {
+    text-align: center;
+  }
+}
+
+@media (max-width: $sm-m) {
+  .navbar-toggle {
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.navbar-inverse .navbar-toggle,
+.navbar-inverse .navbar-toggle:focus,
+ .navbar-inverse .navbar-toggle:hover {
+  background-color:#333333;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: $color-primary2;
+}
+
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: $color-primary3;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+  background-color: $color-primary;
+}

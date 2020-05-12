@@ -1,22 +1,22 @@
-@mixin lg {
+@mixin lg-max {
   @media (max-width: $lg - 0.2) {
     @content;
   }
 }
 
-@mixin md {
+@mixin md-max {
   @media (max-width: $md - 0.2) {
     @content;
   }
 }
 
-@mixin sm {
+@mixin sm-max {
   @media (max-width: $sm - 0.2) {
     @content;
   }
 }
 
-@mixin xs {
+@mixin xs-max {
   @media (max-width: $xs - 0.2) {
     @content;
   }
