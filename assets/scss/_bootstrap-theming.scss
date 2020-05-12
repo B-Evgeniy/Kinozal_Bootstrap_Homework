@@ -1,3 +1,5 @@
+// СТИЛИЗАЦИЯ ВЕРХНЕЙ ПАНЕЛИ МЕНЮ
+
 .navbar {
   margin-bottom: 0;
   border: none;
@@ -53,8 +55,8 @@
 
 .navbar-inverse .navbar-toggle,
 .navbar-inverse .navbar-toggle:focus,
- .navbar-inverse .navbar-toggle:hover {
-  background-color:#333333;
+.navbar-inverse .navbar-toggle:hover {
+  background-color: #333333;
 }
 
 .navbar-inverse .navbar-nav > .active > a {
@@ -69,4 +71,28 @@
 .navbar-inverse .navbar-nav > li > a:focus,
 .navbar-inverse .navbar-nav > li > a:hover {
   background-color: $color-primary;
+}
+
+// СТИЛИЗАЦИЯ ЛЕВОГО САЙДБАРА
+
+.panel {
+  background-color: $color-gray2;
+  margin-bottom: 30px;
+  &-info {
+    border: none;
+  }
+  &-heading{
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+  }
+  &-body {
+    border: 1px solid $color-gray;
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+.panel-info > .panel-heading {
+  color: $color-light;
+  background-color: $color-accent;
+  border: none;
 }
