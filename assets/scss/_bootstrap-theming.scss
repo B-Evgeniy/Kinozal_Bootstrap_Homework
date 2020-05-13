@@ -89,10 +89,29 @@
     border: 1px solid $color-gray;
     border-radius: 0 0 4px 4px;
   }
+  &:last-child{
+    margin-bottom: 0;
+  }
 }
 
 .panel-info > .panel-heading {
   color: $color-light;
   background-color: $color-accent;
   border: none;
+  font-size: 1.2rem;
+  line-height: 1.1em;
 }
+
+.input-group-lg>.form-control,
+.input-group-lg>.input-group-addon,
+  {
+   font-size: 0.875rem;
+ }
+
+ .form-group-lg .form-control {
+  font-size: 0.875rem;
+ }
+
+ .thumbnail{
+   transition: background-color 0.4s;
+ }

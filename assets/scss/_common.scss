@@ -11,8 +11,11 @@ body {
 
 a{
   color: $color-primary;
+  transition: color 0.4s;
+ 
   &:hover{
-    columns: $color-accent;
+    color: $color-accent;
     text-decoration: none;
   }
 }
+
