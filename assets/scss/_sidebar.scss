@@ -14,12 +14,13 @@
   position: relative;
   clear: both;
   margin-bottom: 15px;
+  padding-right: 10px;
 
-  &:hover .thumbnail{
-    background-color:$color-accent;
+  &:hover .site-news-item__image {
+    background-color: $color-accent;
   }
 
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 15px;
     min-height: 85px;
   }
@@ -31,9 +32,9 @@
     bottom: -5px;
     width: calc(100% - 85px);
     height: 1px;
-    background-color:$color-gray;
+    background-color: $color-gray;
   }
-  
+
   &__image {
     width: 75px;
     float: left;
@@ -49,6 +50,45 @@
     margin-bottom: 10px;
     font-size: 0.8rem;
     color: darken($color-gray, 30%);
-    
+  }
+}
+
+.panel-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.top-films {
+  &__list {
+    margin-bottom: 0;
+  }
+  &__item {
+    position: relative;
+    background-color: $color-gray2;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    a {
+      display: block;
+      padding: 10px 40px 10px 15px;
+      transition: all 0.3s;
+      &:hover {
+        background-color: $color-accent;
+        color: $color-light;
+          .top-films__badge{
+        background-color: $color-dark;
+              }
+      }     
+    }
+  }
+  &__item:not(:last-child) {
+    border-bottom: 1px solid #dddddd;
+  }
+  &__badge {
+    transition: background-color 0.3s;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
