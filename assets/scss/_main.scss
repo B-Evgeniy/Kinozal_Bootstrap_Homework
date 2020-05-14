@@ -20,6 +20,7 @@
   
     &__title{
         @include text-shortener;
+        text-align: center;
     }
     &__thumbnail{
         margin-bottom: 0;
