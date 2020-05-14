@@ -1,0 +1,27 @@
+.main{
+    margin-bottom: 80px;
+    .site-search{
+        margin: -15px 0 45px;
+    }
+    .user-login{
+        margin-bottom: 60px;
+    }
+}
+
+.new-films-row{
+    margin-left: calc(-15px / 2);
+    margin-right: calc(-15px / 2);
+}
+
+.new-films-item{
+   margin-bottom: 15px;
+   padding-left: calc(15px / 2);
+   padding-right: calc(15px / 2);
+  
+    &__title{
+        @include text-shortener;
+    }
+    &__thumbnail{
+        margin-bottom: 0;
+    }
+}

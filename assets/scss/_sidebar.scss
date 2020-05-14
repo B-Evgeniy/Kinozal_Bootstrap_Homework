@@ -14,7 +14,7 @@
   position: relative;
   clear: both;
   margin-bottom: 15px;
-  padding-right: 10px;
+ 
 
   &:hover .site-news-item__image {
     background-color: $color-accent;
@@ -54,8 +54,8 @@
 }
 
 .panel-body {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .top-films {
@@ -70,15 +70,15 @@
     border-radius: 0;
     a {
       display: block;
-      padding: 10px 40px 10px 15px;
+      padding: 10px 40px 10px 5px;
       transition: all 0.3s;
       &:hover {
         background-color: $color-accent;
         color: $color-light;
-          .top-films__badge{
-        background-color: $color-dark;
-              }
-      }     
+        .top-films__badge {
+          background-color: $color-dark;
+        }
+      }
     }
   }
   &__item:not(:last-child) {

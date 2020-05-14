@@ -81,7 +81,7 @@
   &-info {
     border: none;
   }
-  &-heading{
+  &-heading {
     font-size: 1.2rem;
     letter-spacing: 0.1em;
   }
@@ -89,7 +89,7 @@
     border: 1px solid $color-gray;
     border-radius: 0 0 4px 4px;
   }
-  &:last-child{
+  &:last-child {
     margin-bottom: 0;
   }
 }
@@ -102,16 +102,15 @@
   line-height: 1.1em;
 }
 
-.input-group-lg>.form-control,
-.input-group-lg>.input-group-addon,
-  {
-   font-size: 0.875rem;
- }
-
- .form-group-lg .form-control {
+.input-group-lg > .form-control,
+.input-group-lg > .input-group-addon {
   font-size: 0.875rem;
- }
+}
 
- .thumbnail{
-   transition: background-color 0.4s;
- }
+.form-group-lg .form-control {
+  font-size: 0.875rem;
+}
+
+.thumbnail {
+  transition: background-color 0.4s;
+}
