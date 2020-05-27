@@ -1,28 +1,107 @@
-.main{
-    margin-bottom: 80px;
-    .site-search{
-        margin: -15px 0 45px;
-    }
-    .user-login{
-        margin-bottom: 60px;
-    }
+.main {
+  margin-bottom: 80px;
+  .site-search {
+    margin: -15px 0 45px;
+  }
+  .user-login {
+    margin-bottom: 60px;
+  }
+}
+.new-films {
+  position: relative;
+  overflow: hidden;
+}
+.new-films-row {
+  margin-left: calc(-15px / 2);
+  margin-right: calc(-15px / 2);
 }
 
-.new-films-row{
-    margin-left: calc(-15px / 2);
-    margin-right: calc(-15px / 2);
+.new-films-item {
+  margin-bottom: 15px;
+  padding-left: calc(15px / 2);
+  padding-right: calc(15px / 2);
+
+  &__title {
+    @include text-shortener;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    transition: all 0.4s;
+  }
+  &__thumbnail {
+    margin-bottom: 0;
+    transition: all 0.4s;
+  }
+}
+.new-films-item__thumbnail:hover {
+  border-color: $color-accent;
+  background-color: $color-accent;
 }
 
-.new-films-item{
-   margin-bottom: 15px;
-   padding-left: calc(15px / 2);
-   padding-right: calc(15px / 2);
-  
-    &__title{
-        @include text-shortener;
-        text-align: center;
-    }
-    &__thumbnail{
-        margin-bottom: 0;
-    }
+.new-films-item__thumbnail:hover .new-films-item__title {
+  color: $color-light;
+}
+
+.top-films {
+  position: relative;
+  overflow: hidden;
+}
+.top-films-row {
+  margin-left: calc(-15px / 2);
+  margin-right: calc(-15px / 2);
+}
+
+.top-films-item {
+  margin-bottom: 15px;
+  padding-left: calc(15px / 2);
+  padding-right: calc(15px / 2);
+
+  &__title {
+    @include text-shortener;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    transition: all 0.4s;
+  }
+  &__thumbnail {
+    margin-bottom: 0;
+    transition: all 0.4s;
+  }
+}
+
+.film-news {
+  position: relative;
+  overflow: hidden;
+  &-item__text {
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+  &-item__button {
+    padding: 6px 12px;
+    margin-bottom: 30px;
+    float: right;
+  }
+}
+
+.top-films-item__thumbnail:hover {
+  border-color: $color-accent;
+  background-color: $color-accent;
+  .top-films-item__title {
+    color: $color-light;
+  }
+}
+
+.film-news__item:hover {
+  .film-news__item__thumbnail {
+    background-color: $color-accent;
+  }
+  a {
+    color: $color-accent;
+  }
+  .film-news-item__button {
+    background-color: $color-accent;
+    color: $color-light;
+}
 }
