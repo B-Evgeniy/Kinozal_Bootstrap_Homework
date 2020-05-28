@@ -8,32 +8,33 @@
 }
 
 .footer-text {
-    transition: all .2s;
+  transition: all 0.2s;
   margin-bottom: 0;
   a {
     color: #777777;
   }
-  
 }
-.footer-text:hover{
-    a{
-      color: #ffffff;
-    }
+.footer-text:hover {
+  a {
+    color: #ffffff;
+  }
 }
 
 .footer-bottom {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   &-title {
-      font-weight: 700;
+    font-weight: 700;
     text-align: center;
-    a {color: #fbfbfb;
+    a {
+      color: #fbfbfb;
     }
   }
   &-info {
     font-size: 0.6rem;
     text-align: center;
-    a {color: #777777;
+    a {
+      color: #777777;
     }
   }
 }

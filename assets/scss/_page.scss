@@ -1,114 +1,115 @@
-
 .about-films {
-    position: relative;
-    overflow: hidden;
-  }
-  .about-films-row {
-    margin-left: calc(-15px / 2);
-    margin-right: calc(-15px / 2);
-  }
-  
-  .myiframe {
-    border: 1px solid #dddddd;
-    border-bottom: none;
-    border-radius: 4px 4px 0 0;
-  
-  }
-  
-  .about-films-info {
-    background-color: #f5f5f5;
-    padding: 19px;
-    border: 1px solid #dddddd;
-    border-radius: 4px;
-    margin-right: 8px;
-    margin-left: 8px;
-    text-align: center;
-    &__inner{
-      display: inline-block;
-      &:not(:last-of-type) {
-        margin-right: 15px;
-          }
-    }
-    &__text{
-      display: inline-block;
-      margin-bottom: 0;
-      font-size: 1.2rem;
-    }
-    &__item{
-      display: inline-block;
-      margin-bottom: 0;
-      background-color: #777;
-      border-radius: 10px;
-      color: $color-light;
-      font-size: 0.96rem;
-      font-weight: 700;
-      padding: 3px 7px;
+  position: relative;
+  overflow: hidden;
+}
+.about-films-row {
+  margin-left: calc(-15px / 2);
+  margin-right: calc(-15px / 2);
+}
+
+.myiframe {
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.about-films-info {
+  background-color: #f5f5f5;
+  padding: 19px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  margin-right: 8px;
+  margin-left: 8px;
+  text-align: center;
+  &__inner {
+    display: inline-block;
+    &:not(:last-of-type) {
+      margin-right: 15px;
     }
   }
-  
-  .description-films {
-    position: relative;
-    overflow: hidden;
-  }
-  .description-films-row {
-    margin-left: calc(-15px / 2);
-    margin-right: calc(-15px / 2);
-  }
-  .description-films-text{
-    border-color: $color-gray;
-    background-color: $color-gray2;
-    padding: 19px;
-    margin-bottom: 20px;
-    border: 1px solid #e3e3e3;
-    border-radius: 4px;
-  }
-  
-  .review-films {
-    position: relative;
-    overflow: hidden;
-   
-    &-wrapper{
-      margin-bottom: 30px;
-    }
-    &-wrapper__icon{
-      padding-right: 5px;
-      color: $color-light;
-    }
-    &-wrapper__title{
-      background-color: $color-accent;
-      color: $color-light;
-      padding: 10px 15px;
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px;
-    }
-    &-wrapper__text{   
-      background-color:$color-gray2;
-      border: 1px solid #dddddd;
-      padding: 15px;
-      border-bottom-left-radius: 3px;
-      border-bottom-right-radius: 3px;
-    }
-  }
-  
-  .comments-films {
-    position: relative;
-    overflow: hidden;
-  }
-  .comments-films-row {
-    margin-left: calc(-15px / 2);
-    margin-right: calc(-15px / 2);
-  }
-  
-  .comments-films-form{
-    margin-left: 8px;
-    margin-right: 8px;
-    &__inner{
-      margin-bottom: 15px;
-    }
-  }
-  
-  .comments-films__lastInner{
-    text-align: end;
+  &__text {
+    display: inline-block;
     margin-bottom: 0;
+    font-size: 1.2rem;
   }
-  
+  &__item {
+    display: inline-block;
+    margin-bottom: 0;
+    background-color: #777;
+    border-radius: 10px;
+    color: $color-light;
+    font-size: 0.96rem;
+    font-weight: 700;
+    padding: 3px 7px;
+  }
+}
+
+.description-films {
+  position: relative;
+  overflow: hidden;
+}
+.description-films-row {
+  margin-left: calc(-15px / 2);
+  margin-right: calc(-15px / 2);
+}
+.description-films-text {
+  border-color: $color-gray;
+  background-color: $color-gray2;
+  padding: 19px;
+  margin-bottom: 20px;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+}
+
+.review-films {
+  position: relative;
+  overflow: hidden;
+
+  &-wrapper {
+    margin-bottom: 30px;
+  }
+  &-wrapper__icon {
+    padding-right: 5px;
+    color: $color-light;
+  }
+  &-wrapper__title {
+    background-color: $color-accent;
+    color: $color-light;
+    padding: 10px 15px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  &-wrapper__text {
+    background-color: $color-gray2;
+    border: 1px solid #dddddd;
+    padding: 15px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+}
+
+.comments-films {
+  position: relative;
+  overflow: hidden;
+}
+.comments-films-row {
+  margin-left: calc(-15px / 2);
+  margin-right: calc(-15px / 2);
+}
+
+.comments-films-form {
+  margin-left: 8px;
+  margin-right: 8px;
+  &__inner {
+    margin-bottom: 15px;
+      }
+}
+
+.comments-films__lastInner {
+  text-align: end;
+  margin-bottom: 0;
+}
+
+.input-my-style {
+  font-size: 0.875rem;
+}

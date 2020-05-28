@@ -9,74 +9,70 @@ body {
   overflow-y: scroll;
 }
 
-@media (min-width: $xs-m){
- h1{  
-   font-size: 3rem;
- }
- h2{
-  font-size: 2.5rem;
- }
- h3{
-  font-size: 1.5rem;
- }
+@media (min-width: $xs-m) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: $xs-m) {
-  h1{  
+  h1 {
     font-size: 2rem;
   }
-  h2{
-   font-size: 1.75rem;
+  h2 {
+    font-size: 1.75rem;
   }
-  h3{
-   font-size: 1.25rem;
+  h3 {
+    font-size: 1.25rem;
   }
-
 }
 
-h1{
+h1 {
   font-family: $font-header;
   margin: -7.5px 0 45px;
-  
-  
-    &::after{
+
+  &::after {
     content: "";
     position: absolute;
     width: 100%;
     margin: 0.85em 0 0 15px;
     border-bottom: 3px solid rgba(240, 173, 79, 0.7);
-      }
- }
+  }
+}
 
 h2 {
   font-family: $font-header;
   margin: 60px 0 45px 45px;
-  
-  &::before{
+
+  &::before {
     position: absolute;
     left: 0;
     width: 30px;
     margin: 0.25em 0 0 0;
     content: "";
     border-bottom: 3px solid rgba(240, 173, 79, 0.7);
-      }
-  &::after{
+  }
+  &::after {
     content: "";
     position: absolute;
     width: 100%;
     margin: 0.85em 0 0 15px;
     border-bottom: 3px solid rgba(240, 173, 79, 0.7);
-      }
-
+  }
 }
 
-a{
+a {
   color: $color-primary;
   transition: color 0.4s;
-  
-  &:hover{
+
+  &:hover {
     color: $color-accent;
     text-decoration: none;
-
-}
+  }
 }
